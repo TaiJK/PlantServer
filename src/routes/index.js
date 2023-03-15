@@ -13,7 +13,7 @@ app.use('/kinds',kindsRouter);
 app.use('/cart',cartRouter);
 app.use('/mid',midRouter);
 app.use('/',UserRouter);
-app.use('/1233',{});
+
 }
 module.exports = route;
 

@@ -1,6 +1,6 @@
 const User =require ('../modules/users')
 const bcrypt = require('bcrypt');
-
+const Cart = require ('../modules/cart');
 class UserController{
 
     index(req,res) {
@@ -36,7 +36,7 @@ class UserController{
           // console.log(user.password)
           // console.log(hashedPassword) 
           const user = await User.create(req.body)
-  
+            const cart = await Cart.create()
           // console.log(returnUpdate)
           // console.log(user.password)
           // console.log(user)
