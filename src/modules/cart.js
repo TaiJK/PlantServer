@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
+const User = require('../modules/users')
 const cartSchema = mongoose.Schema(
     {
+        UserId:{
+            type :  mongoose.Schema.Types.ObjectId,ref: 'userSchema'
+        },
         
             voucher:{
                 type : String ,
